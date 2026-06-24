@@ -1,0 +1,16 @@
+name = "space-weather"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+workers_dev = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "space-weather"
+database_id = "3e9e95a2-8352-43e6-9ec6-01b6ef7cbf02"
+
+[triggers]
+crons = ["*/30 * * * *"]
+
+[[routes]]
+pattern = "spaceweather.dsremo.com"
+custom_domain = true
